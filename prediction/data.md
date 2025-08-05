@@ -1,3 +1,25 @@
+# 🧠 What is Machine Learning?
+
+**Machine Learning (ML)** is a subset of Artificial Intelligence (AI) that enables computers to learn patterns from data and make decisions or predictions without being explicitly programmed.
+
+ML is broadly categorized into:
+- **Supervised Learning** – learning from labeled data
+- **Unsupervised Learning** – finding hidden patterns in unlabeled data
+- **Reinforcement Learning** – learning through trial and error
+
+---
+
+# 🏡 Predicting House Prices Using Linear Regression
+
+One classic use case of ML is **predicting house prices** based on features like:
+
+- Square footage
+- Number of bedrooms
+- Location
+- Age of the house
+
+We use **Linear Regression**, a type of Supervised ML algorithm, to find the best-fit line that relates these features (inputs) to the house price (output). Once trained, the model can predict prices for new, unseen houses.
+
 House Price Prediction Using Linear Regression
 
 This mini-project demonstrates how we can **predict house prices** based on **house size (in square feet)** using a simple **linear regression model**.
