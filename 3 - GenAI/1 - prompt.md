@@ -1,6 +1,31 @@
-# 🧠 IKYAM Workshop Notes - Prompt Engineering Techniques in Markdown
+# IKYAM Workshop Notes - Prompt Engineering Techniques in Markdown
 
 This guide contains all the major prompting techniques in **Markdown format**, ready to be used in documentation, GitHub repositories, workshops, or LMS platforms.
+
+## We will discuss
+
+- Custom Instructions
+- Tockens, Predection and Vectors
+- Prompt Techniques 
+
+# ChatGPT Custom Instructions for SAP Functional Consultants
+
+This guide provides a recommended setup for customizing ChatGPT to better assist SAP S/4HANA Functional Consultants. By updating your ChatGPT **Custom Instructions**, you can receive more relevant, business-aligned responses tailored to your SAP workflow.
+
+---
+
+##  Custom Instruction Template
+
+|  Question |  Recommended Input |
+|------------|----------------------|
+|  **What should ChatGPT call you?** | `Name` (or your preferred name/title) |
+|  **What do you do?** | `I’m an SAP Functional Consultant working with S/4HANA and ECC systems. I specialize in modules like SD, MM, and FI. My work includes business process mapping, functional specification writing, system configuration, end-user support, testing (UAT/SIT), master data management, and collaborating with ABAP developers and cross-functional teams to deliver ERP solutions.` |
+|  **What traits would you like ChatGPT to have?** | `Be precise, structured, and experienced in SAP. Use industry-standard SAP terminology and align answers with real-world functional scenarios. Keep responses professional, business-oriented, and easy to understand.` |
+|  **Anything else ChatGPT should know about you to provide better responses?** | `I often create documentation like functional specs, BPPs, SOPs, and training guides. I work closely with end-users and developers. Please include SAP T-codes, tables, integration points, and configuration steps when relevant. I appreciate examples, flow explanations, and use-case-driven answers. Prioritize relevance to SAP S/4HANA and best practices in enterprise systems.` |
+
+---
+
+# Prompt Techniques
 
 ---
 
