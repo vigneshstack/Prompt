@@ -55,6 +55,8 @@ The pioneers of modern AI and deep learning include:
 
 Throughout history, humans have used strategy games to showcase intellect, memory, and foresight. AI has now surpassed human champions in some of the most complex games ever created.
 
+![deep-learning](images/deepblue.png)
+
 ### 🧠 Deep Blue vs Garry Kasparov (1997)
 
 In 1997, IBM’s **Deep Blue**, a chess-playing computer, defeated reigning world chess champion **Garry Kasparov**. This was the first time a computer beat a human in a professional chess match.
