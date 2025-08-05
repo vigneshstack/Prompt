@@ -60,9 +60,10 @@ This visual helps confirm that the relationship between size and price is **line
 ### 2️⃣ Regression Plot – Model Prediction
 
 This graph adds:
-🔵 Original data points (blue)
-🔴 A **regression line** (red) learned by the model
-🟢 A **prediction point** for a 1600 sqft house
+
+- 🔵 Original data points (blue)
+- 🔴 A **regression line** (red) learned by the model
+- 🟢 A **prediction point** for a 1600 sqft house
 
 The model learns the pattern:
 > Every additional 250 sqft increases the price by ~$50,000
