@@ -61,7 +61,7 @@ In 2016, **AlphaGo**, developed by Google DeepMind, defeated **Lee Sedol**, one 
 | **Model Interaction**    | Prompt design using ChatGPT, Copilot            | API calls, fine-tuning, embeddings               |
 | **Data Handling**        | Upload CSVs, use drag-and-drop ML tools         | Pandas, NumPy, SQL, Data Lakes                   |
 | **AI Use Cases**         | AI for content creation, chatbots, dashboards   | Custom ML models, pipelines, recommendation systems |
-| **Learning Path**        | No-code/low-code AI courses (Coursera, Udemy)   | Deep Learning Specialization, Fast.ai, Kaggle    |
+| **Learning Path**        | No-code/low-code AI courses                     | Deep Learning Specialization, Fast.ai, Kaggle    |
 | **Ethics & Bias**        | Understand AI fairness and disclosure           | Implement explainable AI, bias mitigation        |
 | **Project Building**     | App builders with AI blocks (Bubble, Glide)     | Full-stack AI apps using Flask/FastAPI + React   |
 | **Collaboration**        | Work with devs to ideate AI features            | Mentor non-tech teams and integrate feedback     |
