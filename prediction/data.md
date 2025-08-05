@@ -64,3 +64,26 @@ This graph adds:
 ---
 ![Regression](https://github.com/vigneshstack/Prompt/blob/main/prediction/regression.png)
 
+## 🧠 Create a Model in Real-Time with Teachable Machine
+
+Teachable Machine by Google is a fast, easy-to-use web tool that lets you create machine learning models without writing any code.
+
+In this session, we'll build an **image recognition model** live, in real-time!
+
+---
+
+### 📸 What We'll Do:
+1. Upload or capture images from your webcam
+2. Label them into categories (e.g., "Happy Face", "Sad Face", "No Mask", "With Mask")
+3. Train the model instantly in your browser
+4. Test the model live — see real-time predictions!
+5. Export your model for use in apps or websites
+
+---
+
+### 🔗 Link to Get Started:
+👉 [Train an Image Model Now](https://teachablemachine.withgoogle.com/train/image)
+
+
+
+
