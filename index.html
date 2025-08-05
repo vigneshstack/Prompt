@@ -4,139 +4,356 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Reveal.js Presentation</title>
+		<title>AI: Why It Matters and How to Use It Responsibly</title>
 
 		<!-- Reveal.js Core CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css">
 		
-		<!-- 
-			Theme for the presentation.
-			Available themes are: beige, black, blood, league, moon, night, serif, simple, sky, solarized, white
-		-->
+		<!-- Theme: Dark theme for the new color scheme -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/theme/black.min.css" id="theme">
 
 		<!-- Theme for syntax highlighting -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
 
-		<!-- Custom Styles -->
+		<!-- Custom Styles for Diagram and Layout -->
 		<style>
-			/* Add any custom styles here */
-			.reveal .slides img.logo {
-				max-height: 150px;
-				border: none;
-				box-shadow: none;
+			/* Animated Gradient Background */
+			.reveal {
+				background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #141e30);
+				background-size: 400% 400%;
+				animation: gradientBG 20s ease infinite;
 			}
-            .reveal .slides .small-text {
+
+			@keyframes gradientBG {
+				0% { background-position: 0% 50%; }
+				50% { background-position: 100% 50%; }
+				100% { background-position: 0% 50%; }
+			}
+
+			/* Make sure slide backgrounds are transparent to see the gradient */
+			.reveal .slides {
+				background: transparent;
+			}
+			.reveal .slides section {
+				background: rgba(0, 0, 0, 0.1); /* Subtle dark background for slides */
+				border-radius: 15px;
+			}
+			
+			.reveal .slides .small-text {
                 font-size: 0.6em;
+            }
+
+			/* Improved AI Landscape Diagram */
+            .ai-diagram-container {
+                position: relative;
+                width: 700px;
+                height: 700px;
+                margin: 50px auto 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .ai-circle {
+                border-radius: 50%;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+                color: white;
+                font-weight: bold;
+				box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            }
+			.ai-circle:hover {
+				transform: scale(1.05);
+				box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+			}
+            .ai-circle .label {
+                position: relative;
+                z-index: 10;
+				text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            }
+            .ai-circle .description {
+                visibility: hidden;
+                opacity: 0;
+                position: absolute;
+                bottom: 25px;
+                background-color: rgba(0, 0, 0, 0.85);
+				backdrop-filter: blur(5px);
+                color: white;
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 0.5em;
+                width: 220px;
+                text-align: center;
+                transition: opacity 0.4s ease, visibility 0.4s ease;
+                z-index: 20;
+				pointer-events: none;
+            }
+            .ai-circle:hover .description {
+                visibility: visible;
+                opacity: 1;
+            }
+            #ai {
+                width: 700px; height: 700px;
+                background-color: #00A8FF; /* Bright Blue */
+                z-index: 1;
+            }
+            #ml {
+                width: 550px; height: 550px;
+                background-color: #90EE90; /* Vibrant Green */
+                z-index: 2;
+            }
+            #dl {
+                width: 400px; height: 400px;
+                background-color: #FFC300; /* Warm Orange */
+                z-index: 3;
+            }
+            #genai {
+                width: 250px; height: 250px;
+                background-color: #FF007F; /* Hot Pink */
+                z-index: 4;
+            }
+            .token-container {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            .token {
+                background-color: rgba(255, 255, 255, 0.1);
+                border: 2px solid rgba(255, 255, 255, 0.3);
+                color: white;
+                padding: 15px;
+                border-radius: 8px;
+                font-family: monospace;
+                font-size: 1.2em;
+            }
+            /* Styles for Gemini API integration */
+            .idea-generator-container {
+                margin-top: 20px;
+                text-align: center;
+            }
+            .idea-generator-container input {
+                font-size: 0.8em;
+                padding: 10px;
+                border-radius: 8px;
+                border: 2px solid #ccc;
+                width: 60%;
+				background-color: #f0f0f0;
+				color: #333;
+            }
+            .idea-generator-container button {
+                font-size: 0.8em;
+                padding: 10px 20px;
+                border-radius: 8px;
+                border: none;
+                background-color: #00A8FF;
+                color: white;
+                cursor: pointer;
+                margin-left: 10px;
+				transition: background-color 0.3s;
+            }
+			.idea-generator-container button:hover {
+				background-color: #008fdb;
+			}
+            #idea-results {
+                margin-top: 20px;
+                text-align: left;
+                font-size: 0.7em;
+            }
+            .idea-card {
+                background-color: rgba(255, 255, 255, 0.05);
+                border-left: 5px solid #00A8FF;
+                padding: 15px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+            }
+            .idea-card h4 {
+                margin-top: 0;
+				color: #90EE90;
             }
 		</style>
 	</head>
 	<body>
-		<!-- The main presentation container -->
 		<div class="reveal">
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				
 				<!-- Slide 1: Title Slide -->
 				<section>
-					<h2>Reveal.js</h2>
-					<h3>The HTML Presentation Framework</h3>
-					<p class="small-text">Created with Gemini</p>
-                    <img src="https://placehold.co/150x150/FFFFFF/000000?text=Logo" alt="Logo" class="logo">
-					<aside class="notes">
-						Hi everyone! Welcome to my presentation on Reveal.js. Today we'll explore how to make awesome web-based slideshows.
-					</aside>
+					<h2>AI: Why It Matters and How to Use It Responsibly</h2>
+					<p>A Workshop on Understanding and Applying AI</p>
 				</section>
 
-				<!-- Slide 2: Simple List -->
-				<section>
-					<h2>What is Reveal.js?</h2>
-					<ul>
-						<li class="fragment">A framework for creating presentations using HTML</li>
-						<li class="fragment">Open source and highly customizable</li>
-						<li class="fragment">Supports Markdown, speaker notes, and more</li>
-						<li class="fragment">Works great on all devices</li>
-					</ul>
-				</section>
+				<!-- Slide 2: Agenda -->
+                <section>
+                    <h2>This session will cover:</h2>
+                    <ol>
+                        <li class="fragment">What AI really is (beyond the buzz)</li>
+                        <li class="fragment">How it's shaping industries</li>
+                        <li class="fragment">Do’s & Don’ts when using AI tools</li>
+                        <li class="fragment">Ethical and responsible use</li>
+                    </ol>
+                </section>
 
-				<!-- Slide 3: Nested Slides (Vertical) -->
+				<!-- Slide 3: What is Intelligence? -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>You can navigate down to see more slides.</p>
-						<p>Use the down arrow key!</p>
+						<h2>First, what is Intelligence?</h2>
+						<p class="fragment">The ability to perceive or infer information, and to retain it as knowledge to be applied towards adaptive behaviors within an environment or context.</p>
+						<p class="fragment">In simple terms: Learning, reasoning, and problem-solving.</p>
 					</section>
 					<section>
-						<h3>Vertical Slide 2</h3>
-						<p>This is the second slide in the vertical stack.</p>
-					</section>
-					<section>
-						<h3>Vertical Slide 3</h3>
-						<p>And this is the third. Press right to continue to the next main slide.</p>
+						<h2>And what is Artificial Intelligence?</h2>
+						<p>It's when we build machines that can perform tasks that typically require human intelligence.</p>
+						<p class="fragment">It's not about consciousness or feeling; it's about <strong style="color: #00A8FF;">simulating intelligent behavior</strong>.</p>
 					</section>
 				</section>
 
-				<!-- Slide 4: Code Example -->
+				<!-- Slide 4: History -->
 				<section>
-					<h2>Code Highlighting</h2>
-					<p>You can easily display code with syntax highlighting:</p>
-					<pre><code data-line-numbers="3-5" class="javascript">
-// Initialize Reveal.js
-function initializeSlides() {
-  Reveal.initialize({
-    controls: true,
-    progress: true,
-    history: true,
-    center: true,
-    plugins: [ RevealHighlight, RevealNotes ]
-  });
-}
-					</code></pre>
+					<section>
+						<h2>The Dream of Thinking Machines</h2>
+						<p>For centuries, humans have imagined creating artificial beings that can think.</p>
+						<p class="fragment">In 1950, computer science pioneer <strong>Alan Turing</strong> proposed a test for machine intelligence, asking:</p>
+						<h3 class="fragment"><em>"Can machines think?"</em></h3>
+						<p class="fragment small-text">This shifted the question from a philosophical debate to a tangible engineering problem.</p>
+					</section>
+					<section>
+						<h2>The Birth of a Name</h2>
+						<p>The term "Artificial Intelligence" was coined in 1956.</p>
+						<p class="fragment">It happened at the <strong>Dartmouth Summer Research Project on Artificial Intelligence</strong>, a workshop that brought together the founding fathers of the field.</p>
+						<p class="fragment">They laid the groundwork for decades of research to come.</p>
+					</section>
 				</section>
-				
-				<!-- Slide 5: Image Example -->
+                
+                <!-- Slide 5: Growth of AI -->
+                <section>
+                    <h2>Unprecedented Growth & Adoption</h2>
+                    <p>AI's recent growth has outpaced nearly every other technology in history.</p>
+                    <h4>Time to reach 100 Million Users:</h4>
+                    <ul>
+                        <li class="fragment"><strong>Telephone:</strong> ~75 years</li>
+                        <li class="fragment"><strong>Mobile Phone:</strong> ~16 years</li>
+                        <li class="fragment"><strong>Internet:</strong> ~7 years</li>
+                        <li class="fragment" style="color: #90EE90;"><strong>ChatGPT:</strong> 2 months</li>
+                    </ul>
+                </section>
+
+				<!-- Slide 6: AI Subfields Diagram -->
 				<section>
-					<h2>Images are Easy</h2>
-					<p>Just use the standard `&lt;img&gt;` tag.</p>
-					<img 
-						width="500" 
-						src="https://placehold.co/800x400/3B82F6/FFFFFF?text=A+Beautiful+Image" 
-						alt="Placeholder Image"
-						onerror="this.onerror=null;this.src='https://placehold.co/800x400/CCCCCC/FFFFFF?text=Image+Not+Found';"
-					>
+					<h2>The Landscape of AI</h2>
+					<p>Hover over the circles to learn more.</p>
+					<div class="ai-diagram-container">
+						<div id="ai" class="ai-circle">
+							<span class="label">Artificial Intelligence</span>
+							<div class="description">
+								<strong>Broad Field:</strong> Simulating human intelligence in machines.
+							</div>
+						</div>
+						<div id="ml" class="ai-circle">
+							<span class="label">Machine Learning</span>
+							<div class="description">
+								<strong>AI Subset:</strong> Algorithms that learn from data.
+							</div>
+						</div>
+						<div id="dl" class="ai-circle">
+							<span class="label">Deep Learning</span>
+							<div class="description">
+								<strong>ML Subset:</strong> Using neural networks with many layers.
+							</div>
+						</div>
+						<div id="genai" class="ai-circle">
+							<span class="label">GenAI</span>
+							<div class="description">
+								<strong>DL Subset:</strong> Models that create new content.
+							</div>
+						</div>
+					</div>
 				</section>
 
-				<!-- Slide 6: Markdown Support -->
-				<section data-markdown>
-					<textarea data-template>
-						## You can write slides in Markdown!
-						It's often faster and easier.
-						
-						- Item 1
-						- Item 2
-						- Item 3
-						
-						```js
-						console.log("Hello, Markdown!");
-						```
-					</textarea>
-				</section>
+                <!-- Slide 7: Input to Output -->
+                <section>
+                    <h2>How It Works: Input to Output</h2>
+                    <p>At its core, an AI model is a transformation engine.</p>
+                    <div style="display: flex; align-items: center; justify-content: center; margin-top: 50px; font-size: 1.5em;">
+                        <div class="fragment" style="border: 2px solid #ccc; padding: 20px; border-radius: 10px;">Your Input<br/>(Prompt)</div>
+                        <div class="fragment" style="margin: 0 20px;">➡️</div>
+                        <div class="fragment" style="background: #00A8FF; color: white; padding: 20px 40px; border-radius: 10px;">AI Model</div>
+                        <div class="fragment" style="margin: 0 20px;">➡️</div>
+                        <div class="fragment" style="border: 2px solid #ccc; padding: 20px; border-radius: 10px;">Generated Output<br/>(Response)</div>
+                    </div>
+                </section>
 
-				<!-- Slide 7: Backgrounds -->
-				<section data-background-color="rgb(70, 70, 255)">
-					<h2>Slide Backgrounds</h2>
-					<p>You can set colors, images, or even videos as slide backgrounds.</p>
-				</section>
+                <!-- Slide 8: Tokenization -->
+                <section>
+                    <h2>From Words to Numbers: Tokenization</h2>
+                    <p>AI models don't understand words. They understand numbers (tokens).</p>
+                    <p class="fragment">Your input is broken down into a sequence of tokens.</p>
+                    <h4 class="fragment">"AI is powerful"</h4>
+                    <div class="token-container fragment">
+                        <div class="token">"AI"</div>
+                        <div class="token">"is"</div>
+                        <div class="token">"power"</div>
+                        <div class="token">"ful"</div>
+                    </div>
+                    <p class="fragment small-text" style="margin-top: 20px;">Each token corresponds to a number the model can process.</p>
+                </section>
 
-				<!-- Slide 8: The End -->
+				<!-- Slide 9: Responsible AI -->
 				<section>
-					<h2>THE END</h2>
-					<p>
-						Thank you for your attention.
-					</p>
-					<p>
-						Check out the <a href="https://revealjs.com" target="_blank">official documentation</a> for more.
-					</p>
+					<section>
+						<h2>Using AI Tools: Do's & Don'ts</h2>
+						<div style="display: flex; justify-content: space-around;">
+							<div style="text-align: left;">
+								<h3 style="color: #90EE90;">Do ✅</h3>
+								<ul>
+									<li class="fragment">Verify important information</li>
+									<li class="fragment">Use it to brainstorm & draft</li>
+									<li class="fragment">Be clear and specific in prompts</li>
+									<li class="fragment">Review and edit the output</li>
+								</ul>
+							</div>
+							<div style="text-align: left;">
+								<h3 style="color: #FF007F;">Don't ❌</h3>
+								<ul>
+									<li class="fragment">Trust it blindly ("hallucinations")</li>
+									<li class="fragment">Submit AI work as your own</li>
+									<li class="fragment">Share sensitive or private data</li>
+									<li class="fragment">Use it for high-stakes decisions</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>Ethical & Responsible Use</h2>
+						<p>As we build and use AI, we must consider:</p>
+						<ul>
+							<li class="fragment"><strong>Bias:</strong> AI models can learn and amplify human biases from their training data.</li>
+							<li class="fragment"><strong>Privacy:</strong> How is our data being used to train and operate these models?</li>
+							<li class="fragment"><strong>Accountability:</strong> Who is responsible when an AI makes a mistake?</li>
+							<li class="fragment"><strong>Transparency:</strong> Can we understand how the AI reached its conclusion?</li>
+						</ul>
+					</section>
+				</section>
+
+                <!-- Slide 10: NEW - Interactive Gemini API Slide -->
+                <section>
+                    <h2>✨ Let's Brainstorm with AI</h2>
+                    <p>Enter a topic below to see how AI can generate creative workshop ideas.</p>
+                    <div class="idea-generator-container">
+                        <input type="text" id="topic-input" placeholder="E.g., 'Data Science' or 'Creative Writing'">
+                        <button id="generate-ideas-btn" onclick="generateIdeas()">Generate Ideas</button>
+                    </div>
+                    <div id="idea-results">
+                        <!-- API results will be injected here -->
+                    </div>
+                </section>
+
+				<!-- Slide 11: The End -->
+				<section>
+					<h2>Thank You</h2>
+					<p>Questions?</p>
 				</section>
 
 			</div>
@@ -152,47 +369,114 @@ function initializeSlides() {
 		
 		<!-- Initialization Script -->
 		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/config/
-			// - https://revealjs.com/plugins/
 			Reveal.initialize({
-				// Display controls in the bottom right corner
 				controls: true,
-
-				// Display a presentation progress bar
 				progress: true,
-
-				// Push each slide change to the browser history
 				history: true,
-
-				// Enable keyboard shortcuts for navigation
-				keyboard: true,
-
-				// Enable the slide overview mode
-				overview: true,
-
-				// Vertical centering of slides
 				center: true,
-
-				// Enables touch navigation on devices with touch input
+				keyboard: true,
+				overview: true,
 				touch: true,
-
-				// Loop the presentation
 				loop: false,
-
-				// Number of milliseconds between automatically advancing slides
-				autoSlide: 0,
-				
-				// Transition style
-				// default/cube/page/concave/zoom/linear/fade/none
-				transition: 'slide', 
-
-				// Transition speed
-				transitionSpeed: 'default', // default/fast/slow
-
-				// Enable plugins
+				transition: 'slide',
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
+
+            // --- Gemini API Integration ---
+            async function generateIdeas() {
+                const topicInput = document.getElementById('topic-input');
+                const resultsContainer = document.getElementById('idea-results');
+                const generateBtn = document.getElementById('generate-ideas-btn');
+                const topic = topicInput.value;
+
+                if (!topic) {
+                    resultsContainer.innerHTML = '<p style="color: #FF007F;">Please enter a topic.</p>';
+                    return;
+                }
+
+                // Show loading state
+                resultsContainer.innerHTML = '<p>Generating ideas...</p>';
+                generateBtn.disabled = true;
+                generateBtn.innerText = 'Thinking...';
+
+                const prompt = `Generate exactly three creative and engaging workshop ideas for the topic: "${topic}". For each idea, provide a catchy title and a brief, one-sentence description.`;
+                
+                const payload = {
+                  contents: [{ role: "user", parts: [{ text: prompt }] }],
+                  generationConfig: {
+                    responseMimeType: "application/json",
+                    responseSchema: {
+                      type: "OBJECT",
+                      properties: {
+                        "workshop_ideas": {
+                          "type": "ARRAY",
+                          "items": {
+                            "type": "OBJECT",
+                            "properties": {
+                              "title": { "type": "STRING" },
+                              "description": { "type": "STRING" }
+                            },
+                            required: ["title", "description"]
+                          }
+                        }
+                      },
+                      required: ["workshop_ideas"]
+                    }
+                  }
+                };
+
+                const apiKey = ""; // API key will be injected by the environment
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`API request failed with status ${response.status}`);
+                    }
+
+                    const result = await response.json();
+                    
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        
+                        const jsonText = result.candidates[0].content.parts[0].text;
+                        const parsedJson = JSON.parse(jsonText);
+                        const ideas = parsedJson.workshop_ideas;
+
+                        let htmlOutput = '';
+                        if (ideas && ideas.length > 0) {
+                            ideas.forEach(idea => {
+                                htmlOutput += `
+                                    <div class="idea-card">
+                                        <h4>${idea.title}</h4>
+                                        <p>${idea.description}</p>
+                                    </div>
+                                `;
+                            });
+                        } else {
+                           htmlOutput = '<p style="color: #FFC300;">The AI returned an empty list of ideas. Try being more specific!</p>';
+                        }
+                        resultsContainer.innerHTML = htmlOutput;
+
+                    } else {
+                        throw new Error("Invalid response structure from API.");
+                    }
+
+                } catch (error) {
+                    console.error('Error calling Gemini API:', error);
+                    resultsContainer.innerHTML = `<p style="color: #FF007F;">Sorry, an error occurred while generating ideas. Please check the console for details.</p>`;
+                } finally {
+                    // Restore button
+                    generateBtn.disabled = false;
+                    generateBtn.innerText = 'Generate Ideas';
+                }
+            }
 		</script>
 	</body>
 </html>
