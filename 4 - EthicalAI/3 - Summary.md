@@ -37,6 +37,19 @@ Congratulations on completing the AI workshop! You’ve now explored the fascina
 - ✅ Ethical AI practices and responsible usage
 
 ---
+# “AI won’t replace you. But someone using AI will.”
+
+### 🎯 AlphaGo vs Lee Sedol (2016)
+
+In 2016, **AlphaGo**, developed by Google DeepMind, defeated **Lee Sedol**, one of the greatest Go players in history.
+
+- Used **deep reinforcement learning** and **policy/value neural networks**
+- Played millions of games against itself
+- Famous **Move 37** (Game 2) was creative and non-intuitive—shocked human experts
+
+> "It was a move that no human would make... it was beautiful." – Lee Sedol on Move 37
+
+
 
 ## 🚀 What to Do After This Workshop
 
@@ -66,7 +79,7 @@ Congratulations on completing the AI workshop! You’ve now explored the fascina
 
 ## 📍 Final Thoughts
 
-# “AI won’t replace you. But someone using AI will.”
+
 
 Keep learning. Keep prompting. Keep building. 🚀
 
