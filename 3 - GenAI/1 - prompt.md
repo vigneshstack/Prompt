@@ -175,17 +175,16 @@ ReAct: Fetch condition types from SAP config DB.
 ```
 
 ---
-| Prompt Technique        | Use Case                                                                 | Similar Prompt Technique     | Key Difference                                                                 |
-|---------------------------|-----------------------------------------------------------------------------|---------------------------------|----------------------------------------------------------------------------------|
-| Zero-shot Prompting       | Quick answers without examples (e.g., translation, factual Q&A)            | One-shot, Few-shot             | No examples are provided                                                        |
-| One-shot Prompting        | Tasks needing format guidance with a single example                        | Zero-shot, Few-shot            | Uses only one example to guide the model                                        |
-| Few-shot Prompting        | Classification, structured outputs, or pattern learning                    | One-shot                        | Provides multiple examples (2–5)                                                |
-| Chain-of-Thought (CoT)    | Step-by-step reasoning (math, logic, puzzles)                              | Self-consistency                | Model is explicitly guided to "think aloud"                                     |
-| Self-Consistency          | Reliable answers in reasoning tasks by aggregating multiple CoT outputs    | Chain-of-Thought                | Picks the most common answer from multiple reasoning paths                      |
-| ReAct (Reason+Act)        | Decision-making, tool use, or question-answering with external reasoning   | CoT                             | Interleaves reasoning and taking actions (e.g., search, calculation)            |
-| Retrieval-Augmented (RAG) | Fact-based responses using external knowledge (e.g., search documents)     | ReAct                           | Augments prompt with real-time retrieved data                                   |
-| Role Prompting            | Shaping model behavior (e.g., "Act as a doctor, lawyer, teacher")          | Instructional prompting         | Assigns a persona to influence tone and expertise                               |
-| Instructional Prompting   | Directly tells the model what to do (e.g., "Summarize this paragraph")     | Zero-shot, Role prompting       | Explicit instructions without needing examples or persona context               |
+| 🧠 Prompt Technique          | 🎯 Use Case                                              | 🔁 Similar Prompt Technique     | 🔍 Key Difference                                                                 |
+|-----------------------------|-----------------------------------------------------------|----------------------------------|------------------------------------------------------------------------------------|
+| Zero-Shot Prompting         | Quick tasks like translation, Q&A, summarization          | One-shot, Instruction-based     | No examples provided; relies on model's pretraining knowledge                      |
+| One-Shot Prompting          | Format-sensitive tasks needing a single example           | Zero-shot, Few-shot             | Provides only one example to set context                                          |
+| Few-Shot Prompting          | Pattern learning, text classification, data transformation | One-shot                        | Multiple examples (2–5) are included to guide the model                           |
+| Chain-of-Thought Prompting  | Multi-step reasoning, math, logic puzzles                 | Self-Consistency, ReAct         | Encourages model to explain its steps ("think aloud")                             |
+| Role-Based Prompting        | Behavior shaping (e.g., "Act as a doctor or tutor")       | Instruction-based               | Assigns a role to the model to influence style and domain knowledge               |
+| Instruction-Based Prompting | Explicit tasks (e.g., "Summarize this in 5 points")       | Zero-shot, Role-based           | Direct, clear instructions without examples or personas                           |
+| ReAct (Reason + Act)        | Tool usage, retrieval-augmented tasks, dynamic environments | Chain-of-Thought                | Combines reasoning with external actions like search or API use                   |
+| Self-Consistency Prompting  | Complex reasoning requiring accurate final output          | Chain-of-Thought                | Uses multiple CoT responses and selects the most consistent answer                |
 
-
+---
 
