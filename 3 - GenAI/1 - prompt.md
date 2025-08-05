@@ -181,7 +181,7 @@ ReAct: Fetch condition types from SAP config DB.
 | One-Shot Prompting          | Format-sensitive tasks needing a single example           | Zero-shot, Few-shot             | Provides only one example to set context                                          |
 | Few-Shot Prompting          | Pattern learning, text classification, data transformation | One-shot                        | Multiple examples (2–5) are included to guide the model                           |
 | Chain-of-Thought Prompting  | Multi-step reasoning, math, logic puzzles                 | Self-Consistency, ReAct         | Encourages model to explain its steps ("think aloud")                             |
-| Role-Based Prompting        | Behavior shaping (e.g., "Act as a doctor or tutor")       | Instruction-based               | Assigns a role to the model to influence style and domain knowledge               |
+| Role-Based Prompting        | Behavior shaping (e.g., "Act as a doctor or abaper")       | Instruction-based               | Assigns a role to the model to influence style and domain knowledge               |
 | Instruction-Based Prompting | Explicit tasks (e.g., "Summarize this in 5 points")       | Zero-shot, Role-based           | Direct, clear instructions without examples or personas                           |
 | ReAct (Reason + Act)        | Tool usage, retrieval-augmented tasks, dynamic environments | Chain-of-Thought                | Combines reasoning with external actions like search or API use                   |
 | Self-Consistency Prompting  | Complex reasoning requiring accurate final output          | Chain-of-Thought                | Uses multiple CoT responses and selects the most consistent answer                |
