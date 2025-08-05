@@ -1,4 +1,4 @@
-# 🤖 AI Workshop: Prompting Tips & Tricks for Table & Structured Output
+# AI Workshop: Prompting Tips & Tricks for Table & Structured Output
 
 This guide provides practical tips for interacting with AI models like ChatGPT to generate well-structured, Excel-friendly, and easy-to-read outputs. Perfect for developers, analysts, and anyone copying data into Excel, Google Sheets, or Markdown.
 
@@ -14,12 +14,11 @@ This guide provides practical tips for interacting with AI models like ChatGPT t
 | Custom Columns | `Make a table with columns: Name, Date, Status.` | Customize your table structure. |
 | Fixed Column Width | `Align all columns for better readability.` | Ensures clean layout when pasting. |
 
----
-
 ## Example Prompt
-
+```markdown
 List the top 5 programming languages by popularity. Show the result in a markdown table with columns: Rank, Language, Popularity Score.
-
+```
+---
 
 ## 💻 Code & Output Formatting Tips
 
