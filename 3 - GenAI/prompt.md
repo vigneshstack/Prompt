@@ -188,7 +188,4 @@ ReAct: Fetch condition types from SAP config DB.
 | Instructional Prompting   | Directly tells the model what to do (e.g., "Summarize this paragraph")     | Zero-shot, Role prompting       | Explicit instructions without needing examples or persona context               |
 
 
-## 🛠️ License
-
-MIT License. Use freely and customize for your training or documentation.
 
