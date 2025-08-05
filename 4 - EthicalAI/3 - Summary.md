@@ -4,7 +4,7 @@ Congratulations on completing the AI workshop! You’ve now explored the fascina
 
 ---
 
-## 🧩 Understanding the Landscape: From AI to Prompt
+## Understanding the Landscape: From AI to Prompt
 
 | Concept       | What It Means                                                                 |
 |---------------|--------------------------------------------------------------------------------|
@@ -16,7 +16,7 @@ Congratulations on completing the AI workshop! You’ve now explored the fascina
 
 ---
 
-## 🏭 Real World Use Cases
+## Real World Use Cases
 
 | Industry        | AI Applications                                                |
 |----------------|-----------------------------------------------------------------|
