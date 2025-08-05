@@ -1,4 +1,4 @@
-# 🧠 Prompt Engineering Techniques Workshop
+# 🧠 IKYAM Prompt Engineering Techniques Workshop
 
 Welcome to the **Prompt Engineering Techniques Workshop**!  
 This repository contains examples and explanations of powerful prompting techniques used to improve Large Language Model (LLM) interactions, especially for business, technical, and enterprise use cases like **SAP ERP**, **AI copilots**, **chatbots**, and **automation workflows**.
