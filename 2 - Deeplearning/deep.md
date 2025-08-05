@@ -31,7 +31,7 @@ The pioneers of modern AI and deep learning include:
 | **Alan Turing** | Proposed the **Turing Test** (Can machines think?) |
 | **John McCarthy** | Coined the term **Artificial Intelligence** |
 
-![ai-pioneers](images/ai-pioneers.jpg)
+
 
 ---
 
@@ -55,7 +55,7 @@ The pioneers of modern AI and deep learning include:
 
 Throughout history, humans have used strategy games to showcase intellect, memory, and foresight. AI has now surpassed human champions in some of the most complex games ever created.
 
-![deep-learning](images/deepblue.png)
+![ai-pioneers](https://github.com/vigneshstack/Prompt/blob/main/images/deepblue.png)
 
 ### 🧠 Deep Blue vs Garry Kasparov (1997)
 
@@ -69,19 +69,7 @@ In 1997, IBM’s **Deep Blue**, a chess-playing computer, defeated reigning worl
 
 ---
 
-### 🎯 AlphaGo vs Lee Sedol (2016)
 
-In 2016, **AlphaGo**, developed by Google DeepMind, defeated **Lee Sedol**, one of the greatest Go players in history.
-
-- Used **deep reinforcement learning** and **policy/value neural networks**
-- Played millions of games against itself
-- Famous **Move 37** (Game 2) was creative and non-intuitive—shocked human experts
-
-> "It was a move that no human would make... it was beautiful." – Lee Sedol on Move 37
-
-![move-37-impact](images/move-37-impact.jpg)
-
----
 
 ## 🤯 Rise of LLMs (Large Language Models)
 
