@@ -8,11 +8,11 @@ Congratulations on completing the AI workshop! You’ve now explored the fascina
 
 | Concept       | What It Means                                                                 |
 |---------------|--------------------------------------------------------------------------------|
-| 🤖 **AI (Artificial Intelligence)** | The simulation of human intelligence by machines. Think: decision-making, pattern recognition. |
-| 📊 **Machine Learning (ML)**       | A subset of AI where machines learn from data to make predictions or decisions.                |
-| 🧠 **Deep Learning (DL)**          | A branch of ML using neural networks to mimic the human brain—used in image/audio processing. |
-| 🧬 **Generative AI (GenAI)**       | A type of AI that creates new content—text, images, code, music—based on patterns in data.    |
-| 🎯 **Prompt Techniques**          | The art of crafting effective inputs (prompts) to get desired outputs from language models.   |
+|  **AI (Artificial Intelligence)** | The simulation of human intelligence by machines. Think: decision-making, pattern recognition. |
+|  **Machine Learning (ML)**       | A subset of AI where machines learn from data to make predictions or decisions.                |
+|  **Deep Learning (DL)**          | A branch of ML using neural networks to mimic the human brain—used in image/audio processing. |
+|  **Generative AI (GenAI)**       | A type of AI that creates new content—text, images, code, music—based on patterns in data.    |
+|  **Prompt Techniques**          | The art of crafting effective inputs (prompts) to get desired outputs from language models.   |
 
 ---
 
