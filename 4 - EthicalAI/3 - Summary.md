@@ -1,10 +1,10 @@
-# 🧠 From Understanding AI to What’s Next: Your Post-Workshop Guide
+# From Understanding AI to What’s Next: Your Post-Workshop Guide
 
 Congratulations on completing the AI workshop! You’ve now explored the fascinating layers of Artificial Intelligence — from foundational concepts to real-world applications. This page summarizes what you’ve learned and gives you a clear roadmap for what to do next.
 
 ---
 
-## 🧩 Understanding the Landscape: From AI to Prompt Engineering
+## 🧩 Understanding the Landscape: From AI to Prompt
 
 | Concept       | What It Means                                                                 |
 |---------------|--------------------------------------------------------------------------------|
@@ -20,49 +20,40 @@ Congratulations on completing the AI workshop! You’ve now explored the fascina
 
 | Industry        | AI Applications                                                |
 |----------------|-----------------------------------------------------------------|
-| 🏥 Healthcare    | Diagnosis, personalized medicine, drug discovery               |
-| 🛒 Retail        | Recommendation engines, dynamic pricing, chatbots             |
-| 💰 Finance       | Fraud detection, credit scoring, algorithmic trading          |
-| ✈ Logistics      | Route optimization, inventory forecasting                     |
-| 🎓 Education     | Personalized tutoring, grading automation                     |
-| 🎨 Creative Arts | Image generation, text-to-video, AI music composition         |
+| Healthcare    | Diagnosis, personalized medicine, drug discovery               |
+| Retail        | Recommendation engines, dynamic pricing, chatbots             |
+| Finance       | Fraud detection, credit scoring, algorithmic trading          |
+| Logistics      | Route optimization, inventory forecasting                     |
+| Education     | Personalized tutoring, grading automation                     |
+| Creative Arts | Image generation, text-to-video, AI music composition         |
 
 ---
 
 ## 📌 What we have discussed
 
-- ✅ The difference between AI, ML, DL, and GenAI
-- ✅ Case studies: AlphaGo, GPT, Deep Blue, industry use cases
-- ✅ Prompting techniques: zero-shot, few-shot, chain-of-thought, etc.
-- ✅ Ethical AI practices and responsible usage
+- The difference between AI, ML, DL, and GenAI
+-  Case studies: AlphaGo, GPT, Deep Blue, industry use cases
+-  Prompting techniques: zero-shot, few-shot, chain-of-thought, etc.
+-  Ethical AI practices and responsible usage
 
 ---
 # “AI won’t replace you. But someone using AI will.”
 
-### 🎯 AlphaGo vs Lee Sedol (2016)
+### AlphaGo vs Lee Sedol (2016)
 
 In 2016, **AlphaGo**, developed by Google DeepMind, defeated **Lee Sedol**, one of the greatest Go players in history.
 
 - Used **deep reinforcement learning** and **policy/value neural networks**
 - Played millions of games against itself
 - Famous **Move 37** (Game 2) was creative and non-intuitive—shocked human experts
+
 ![Plotted](https://github.com/vigneshstack/Prompt/blob/main/images/alphago.png)
 
 > "It was a move that no human would make... it was beautiful." – Lee Sedol on Move 37
 
-
-
-## 🚀 What to Do After This Workshop
-
-### 🧠 1. Practice What You Learned
-
-- Use **Google Teachable Machine** to build image/audio classifiers
-- Try **prompting experiments** with ChatGPT or open-source LLMs
-- Join platforms like [Hugging Face](https://huggingface.co/) to explore real-world AI models
-
 ---
 
-### 📚 2. Deepen Your Knowledge
+## 🚀 What to Do ? Deepen Your Knowledge
 
 | Area of Learning         | 👤 Citizen Developer                            | 👨‍💻 Developer                                   |
 |--------------------------|--------------------------------------------------|-------------------------------------------------|
@@ -80,9 +71,7 @@ In 2016, **AlphaGo**, developed by Google DeepMind, defeated **Lee Sedol**, one 
 
 ## 📍 Final Thoughts
 
-
-
-Keep learning. Keep prompting. Keep building. 🚀
+# Keep learning. Keep prompting. Keep building. 🚀
 
 ---
 
