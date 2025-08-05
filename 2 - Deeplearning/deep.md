@@ -9,29 +9,20 @@
 
 **Deep Learning** is a subfield of machine learning where algorithms are inspired by the structure and function of the brain called **artificial neural networks**. Over the last decade, deep learning has revolutionized industries from healthcare to finance, and most visibly, **image and speech recognition**.
 
-In this guide, we’ll walk through:
-
-- 📚 A brief history of deep learning
-- 👨‍🔬 The godfathers of AI
-- ♟️ Landmark AI achievements in Chess and Go
-- 🤖 Large Language Models (LLMs)
-- 🧪 A real-world example using [Google Teachable Machine](https://teachablemachine.withgoogle.com/)
 
 ---
 
-## 🧠 Godfathers of AI & Deep Learning
+## The pioneers of modern AI and deep learning include:
 
-The pioneers of modern AI and deep learning include:
+This timeline highlights some of the most influential figures in the development of Artificial Intelligence and their landmark contributions.
 
-| Name | Contribution |
-|------|--------------|
-| **Geoffrey Hinton** | Developed backpropagation, neural networks |
-| **Yoshua Bengio** | Probabilistic learning, deep architectures |
-| **Yann LeCun** | Convolutional neural networks (CNNs), used in image recognition |
-| **Alan Turing** | Proposed the **Turing Test** (Can machines think?) |
-| **John McCarthy** | Coined the term **Artificial Intelligence** |
-
-
+| 🕒 Year / Era        | 👤 Name              | 💡 Key Contribution                                                     |
+|----------------------|----------------------|-------------------------------------------------------------------------|
+| 1950s                | **Alan Turing**      | Proposed the **Turing Test** – "Can machines think?"                   |
+| 1956 (Dartmouth Conf)| **John McCarthy**    | Coined the term **"Artificial Intelligence"**                          |
+| 1980s                | **Geoffrey Hinton**  | Pioneered **backpropagation** and modern **neural networks**           |
+| 1990s–2000s          | **Yann LeCun**       | Developed **Convolutional Neural Networks (CNNs)** for image recognition |
+| 2000s–2010s          | **Yoshua Bengio**    | Advanced **probabilistic learning** and **deep architectures**         |
 
 ---
 
@@ -39,15 +30,9 @@ The pioneers of modern AI and deep learning include:
 
 | Era | Milestone |
 |-----|----------|
-| **1950s** | Turing Test introduced |
-| **1980s** | Backpropagation algorithm improved (Hinton) |
 | **2012** | AlexNet wins ImageNet competition with CNN |
 | **2016** | AlphaGo defeats world Go champion Lee Sedol |
 | **2020s** | Rise of GPT-3, GPT-4, open-source LLMs like LLaMA, Mistral |
-
-![deep-learning-evolution](images/deep-learning-evolution.png)
-
----
 
 ---
 
@@ -78,7 +63,7 @@ In 1997, IBM’s **Deep Blue**, a chess-playing computer, defeated reigning worl
 **Large Language Models (LLMs)** are deep learning models trained on massive text datasets to understand and generate human-like language. They are based on **transformer architectures** introduced in 2017 by Vaswani et al.
 
 ### 📈 Timeline of Key Developments
-
+![images/llm-transformer-diagram.png](https://github.com/vigneshstack/Prompt/blob/main/images/transformer.png)
 | Year | Model | Description |
 |------|-------|-------------|
 | 2018 | **BERT** | Bidirectional Encoder Representations from Transformers – excels in NLP understanding |
@@ -86,7 +71,7 @@ In 1997, IBM’s **Deep Blue**, a chess-playing computer, defeated reigning worl
 | 2022 | **ChatGPT** | GPT-based conversational AI with fine-tuning and reinforcement learning |
 | 2023+ | **Claude**, **Gemini**, **LLaMA**, **Mistral** | Open and proprietary models with multi-modal capabilities |
 
-![llm-transformer-diagram](images/llm-transformer-diagram.png)
+
 
 ### ⚙️ Applications of LLMs
 
