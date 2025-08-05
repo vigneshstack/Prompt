@@ -175,14 +175,18 @@ ReAct: Fetch condition types from SAP config DB.
 ```
 
 ---
+| 🧠 Prompt Technique        | 🎯 Use Case                                                                 | 🔁 Similar Prompt Technique     | 🔍 Key Difference                                                                 |
+|---------------------------|-----------------------------------------------------------------------------|---------------------------------|----------------------------------------------------------------------------------|
+| Zero-shot Prompting       | Quick answers without examples (e.g., translation, factual Q&A)            | One-shot, Few-shot             | No examples are provided                                                        |
+| One-shot Prompting        | Tasks needing format guidance with a single example                        | Zero-shot, Few-shot            | Uses only one example to guide the model                                        |
+| Few-shot Prompting        | Classification, structured outputs, or pattern learning                    | One-shot                        | Provides multiple examples (2–5)                                                |
+| Chain-of-Thought (CoT)    | Step-by-step reasoning (math, logic, puzzles)                              | Self-consistency                | Model is explicitly guided to "think aloud"                                     |
+| Self-Consistency          | Reliable answers in reasoning tasks by aggregating multiple CoT outputs    | Chain-of-Thought                | Picks the most common answer from multiple reasoning paths                      |
+| ReAct (Reason+Act)        | Decision-making, tool use, or question-answering with external reasoning   | CoT                             | Interleaves reasoning and taking actions (e.g., search, calculation)            |
+| Retrieval-Augmented (RAG) | Fact-based responses using external knowledge (e.g., search documents)     | ReAct                           | Augments prompt with real-time retrieved data                                   |
+| Role Prompting            | Shaping model behavior (e.g., "Act as a doctor, lawyer, teacher")          | Instructional prompting         | Assigns a persona to influence tone and expertise                               |
+| Instructional Prompting   | Directly tells the model what to do (e.g., "Summarize this paragraph")     | Zero-shot, Role prompting       | Explicit instructions without needing examples or persona context               |
 
-## 📚 Additional Resources
-
-* [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/gpt)
-* [LangChain Documentation](https://docs.langchain.com/)
-* [SAP BTP + GenAI Use Cases](https://community.sap.com/topics/generative-ai)
-
----
 
 ## 🛠️ License
 
