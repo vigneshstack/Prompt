@@ -1,4 +1,4 @@
-# 🤖 Ethical and Responsible Use of AI Tools
+# Ethical and Responsible Use of AI Tools
 
 Artificial Intelligence (AI) has immense potential to improve productivity, decision-making, and innovation. However, the **power of AI must be used with responsibility and integrity**. This guide outlines best practices, common pitfalls, and a framework for the ethical use of AI tools.
 
