@@ -45,7 +45,7 @@ This is a perfect use case for **linear regression**.
 ##  What’s Plotted
 
 ### 1️⃣ Scatter Plot – House Size vs Price
-![Plotted](https://github.com/vigneshstack/Prompt/blob/main/prediction/sizeprice.png)
+![Plotted](https://github.com/vigneshstack/Prompt/blob/main/images/sizeprice.png)
 
 This graph simply shows the **original data points**.
 
@@ -82,27 +82,6 @@ The model learns the pattern:
 5. **Prediction**: We ask the model to estimate price for a 1600 sqft house
 
 ---
-![Regression](https://github.com/vigneshstack/Prompt/blob/main/prediction/regression.png)
+![Regression](https://github.com/vigneshstack/Prompt/blob/main/images/regression.png)
 
-##  Create a Model in Real-Time with Teachable Machine
-
-Teachable Machine by Google is a fast, easy-to-use web tool that lets you create machine learning models without writing any code.
-
-In this session, we'll build an **image recognition model** live, in real-time!
-
----
-
-### 📸 What We'll Do:
-1. Upload or capture images from your webcam
-2. Train the model instantly in your browser
-3. Test the model live — see real-time predictions!
-
----
-
-### 🔗 Link to Get Started:
-👉 [Train an Image Model Now](https://teachablemachine.withgoogle.com/train/image)
-
-
-
-
-
+# Next -> Deeplearning(Deeplearning/deep.md)
