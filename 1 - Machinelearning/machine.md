@@ -58,6 +58,7 @@ This visual helps confirm that the relationship between size and price is **line
 ---
 
 ### 2️⃣ Regression Plot – Model Prediction
+![Regression](https://github.com/vigneshstack/Prompt/blob/main/images/regression.png)
 
 This graph adds:
 
@@ -80,8 +81,5 @@ The model learns the pattern:
 3. **Target**: Price (in $1000s)  
 4. **Training**: Model is trained on past data  
 5. **Prediction**: We ask the model to estimate price for a 1600 sqft house
-
----
-![Regression](https://github.com/vigneshstack/Prompt/blob/main/images/regression.png)
 
 ---
