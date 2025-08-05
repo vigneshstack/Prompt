@@ -1,64 +1,66 @@
-# 🍽️ Predicting Tomorrow’s Restaurant Orders (Without Knowing the Future!)
+🏠 House Price Prediction Using Linear Regression
 
-Imagine you're running a restaurant. Some days are super busy, and others are quiet. But what if you could **predict tomorrow’s order volume**, even if you don’t know *exactly* what will happen?
-
-This project shows how to use **sample data from past days** — weather, day of the week, holidays, etc. — to predict how many orders you'll get **tomorrow**, even though tomorrow hasn't happened yet!
+This mini-project demonstrates how we can **predict house prices** based on **house size (in square feet)** using a simple **linear regression model**.
 
 ---
 
-## 🤔 Why Is This Interesting?
+## 📊 Dataset Overview
 
-You don’t know:
-- Who will walk in tomorrow
-- What dishes they'll order
-- What exact time they'll come
+We use a **very basic dataset** of past house sales to train the model:
 
-But you do know:
-- It's a **Saturday**
-- The **weather forecast** says 35°C and sunny
-- It's a **long weekend**
-- Last few Saturdays were **super busy**
+| Index | Size (sqft) | Price ($1000s) |
+|-------|-------------|----------------|
+| 0     | 500         | 100            |
+| 1     | 750         | 150            |
+| 2     | 1000        | 200            |
+| 3     | 1250        | 250            |
+| 4     | 1500        | 300            |
+| 5     | 1750        | 350            |
+| 6     | 2000        | 400            |
 
-With this info, you can *predict* tomorrow's demand! 📈
-
----
-
-## 📊 Dataset (Simplified)
-
-Each row = one past day at your restaurant.
-
-| Column | Description |
-|--------|-------------|
-| `day` | Monday, Tuesday, etc. |
-| `date` | Date of record |
-| `is_holiday` | Is it a holiday? |
-| `weather` | Sunny, Rainy, Cloudy |
-| `temp_celsius` | Temperature |
-| `orders` | Total orders placed that day (target) ✅ |
-
-> Note: We don’t use tomorrow’s actual data — we use similar past patterns to **guess** tomorrow.
+✅ **Pattern**: As size increases, price increases linearly.  
+💡 This is a perfect use case for **linear regression**.
 
 ---
 
-## 🔮 Problem Statement
+## 📈 What’s Plotted
 
-> Can we predict how many food orders we’ll get tomorrow, using weather, day of the week, and holiday info?
+### 1️⃣ Scatter Plot – House Size vs Price
+![Plotted](https://github.com/vigneshstack/Prompt/blob/main/prediction/sizeprice.png)
 
-This helps restaurants:
-- Plan how many ingredients to buy
-- Decide how many staff to schedule
-- Reduce waste and improve service
+This graph simply shows the **original data points**.
+
+- X-axis: House size in square feet
+- Y-axis: Price in $1000s
+- Each blue dot = one house sale
+
+📌 This visual helps confirm that the relationship between size and price is **linear**.
 
 ---
 
-## 🧠 How the Prediction Works
+### 2️⃣ Regression Plot – Model Prediction
 
-1. **We train a model** using past days:
-   - Sunny Saturdays = ~320 orders
-   - Rainy Mondays = ~80 orders
-2. **We give the model tomorrow’s info**:
-   - Day: Saturday
-   - Holiday: Yes
-   - Weather: Sunny
-   - Temp: 36°C
-3. The model predicts:
+This graph adds:
+- 🔵 Original data points (blue)
+- 🔴 A **regression line** (red) learned by the model
+- 🟢 A **prediction point** for a 1600 sqft house
+
+📍 The model learns the pattern:
+> Every additional 250 sqft increases the price by ~$50,000
+
+📌 Based on this, it predicts:
+ 🏡 **1600 sqft → ~$320,000**
+
+---
+
+## 🤖 How It’s Predicted
+
+1. **Model Used**: Linear Regression  
+2. **Feature**: House size (in sqft)  
+3. **Target**: Price (in $1000s)  
+4. **Training**: Model is trained on past data  
+5. **Prediction**: We ask the model to estimate price for a 1600 sqft house
+
+---
+![Regression](https://github.com/vigneshstack/Prompt/blob/main/prediction/regression.png)
+
