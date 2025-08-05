@@ -1,4 +1,4 @@
-# 🤖 AI Learning Modules: From ML to GenAI
+# AI Learning Modules: From ML to GenAI
 
 Welcome to the AI Learning Repository! This collection of modules is designed to guide learners—whether beginners or professionals—through the foundational and advanced topics in Artificial Intelligence, Machine Learning, Deep Learning, Generative AI, and Ethical AI.
 
