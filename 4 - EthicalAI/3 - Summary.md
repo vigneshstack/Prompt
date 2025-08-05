@@ -46,6 +46,7 @@ In 2016, **AlphaGo**, developed by Google DeepMind, defeated **Lee Sedol**, one 
 - Used **deep reinforcement learning** and **policy/value neural networks**
 - Played millions of games against itself
 - Famous **Move 37** (Game 2) was creative and non-intuitive—shocked human experts
+![Plotted](https://github.com/vigneshstack/Prompt/blob/main/images/alphago.png)
 
 > "It was a move that no human would make... it was beautiful." – Lee Sedol on Move 37
 
