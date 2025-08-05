@@ -84,4 +84,4 @@ The model learns the pattern:
 ---
 ![Regression](https://github.com/vigneshstack/Prompt/blob/main/images/regression.png)
 
-# Next -> Deeplearning(Deeplearning/deep.md)
+---
