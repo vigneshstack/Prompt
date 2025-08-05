@@ -62,8 +62,10 @@ In 1997, IBM’s **Deep Blue**, a chess-playing computer, defeated reigning worl
 
 **Large Language Models (LLMs)** are deep learning models trained on massive text datasets to understand and generate human-like language. They are based on **transformer architectures** introduced in 2017 by Vaswani et al.
 
-### 📈 Timeline of Key Developments
 ![images/llm-transformer-diagram.png](https://github.com/vigneshstack/Prompt/blob/main/images/transformer.png)
+
+### 📈 Timeline of Key Developments
+
 | Year | Model | Description |
 |------|-------|-------------|
 | 2018 | **BERT** | Bidirectional Encoder Representations from Transformers – excels in NLP understanding |
