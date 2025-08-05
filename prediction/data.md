@@ -84,6 +84,9 @@ In this session, we'll build an **image recognition model** live, in real-time!
 ### 🔗 Link to Get Started:
 👉 [Train an Image Model Now](https://teachablemachine.withgoogle.com/train/image)
 
+👉 <a href="https://teachablemachine.withgoogle.com/train/image" target="_blank" rel="noopener noreferrer">Train an Image Model Now</a>
+
+
 
 
 
