@@ -8,15 +8,15 @@ This mini-project demonstrates how we can **predict house prices** based on **ho
 
 We use a **very basic dataset** of past house sales to train the model:
 
-| Index | Size (sqft) | Price ($1000s) |
-|-------|-------------|----------------|
-| 0     | 500         | 100            |
-| 1     | 750         | 150            |
-| 2     | 1000        | 200            |
-| 3     | 1250        | 250            |
-| 4     | 1500        | 300            |
-| 5     | 1750        | 350            |
-| 6     | 2000        | 400            |
+| Index | Size (sqft)       | Price ($1000s) |
+|-------|-------------------|----------------|
+| 0     | 500               | 100            |
+| 1     | 750               | 150            |
+| 2     | 1000              | 200            |
+| 3     | 1250              | 250            |
+| 4     | 1500              | 300            |
+| 5     | 1750              | 350            |
+| 6     | 2000              | 400            |
 
 **Pattern**: As size increases, price increases linearly.  
 This is a perfect use case for **linear regression**.
