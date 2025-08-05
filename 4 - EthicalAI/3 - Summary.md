@@ -16,7 +16,7 @@ Congratulations on completing the AI workshop! You’ve now explored the fascina
 
 ---
 
-## 🏭 Where AI is Used in the Real World
+## 🏭 Real World Use Cases
 
 | Industry        | AI Applications                                                |
 |----------------|-----------------------------------------------------------------|
@@ -29,7 +29,7 @@ Congratulations on completing the AI workshop! You’ve now explored the fascina
 
 ---
 
-## 📌 What we have discussed
+## In Summary
 
 - The difference between AI, ML, DL, and GenAI
 -  Case studies: AlphaGo, GPT, Deep Blue, industry use cases
