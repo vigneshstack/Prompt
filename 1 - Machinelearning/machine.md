@@ -8,7 +8,17 @@ ML is broadly categorized into:
 - **Reinforcement Learning** – learning through trial and error
 
 ---
+| **Input (A)**               | **Output (B)**              | **Application**          |
+|----------------------------|-----------------------------|--------------------------|
+| email                      | spam? (0/1)                 | spam filtering           |
+| audio                      | text transcripts            | speech recognition       |
+| English                    | Chinese                     | machine translation      |
+| ad, user info              | click? (0/1)                | online advertising       |
+| image, radar info          | position of other cars      | self-driving car         |
+| image of phone             | defect? (0/1)               | visual inspection        |
+| sequence of words          | the next word               | chatbot / language model |
 
+---
 # Predicting House Prices Using Linear Regression
 
 One classic use case of ML is **predicting house prices** based on features like:
